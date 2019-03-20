@@ -36,6 +36,9 @@
 						<input type="text" name="reason_of_expense" id="reason_of_expense">
 						<label for="reason_of_expense">The reason of the expense:</label>
 					</div>
+					<div id="save_expense">
+						<button name="save_expense">Sayvexpense</button>
+					</div>
 				</form>
 			</div>
 		</div>

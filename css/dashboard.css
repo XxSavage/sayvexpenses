@@ -33,6 +33,10 @@ body{
     font-weight: bold;
     font-size: 18px;
 }
+#navigation_bar_links > div > a{
+	text-decoration: none;
+	color: white;
+}
 #user_icon_container{
 	position: relative;
     margin: auto;
@@ -70,6 +74,8 @@ body{
 }
 #main_sidebar_container{
 	width: 20%;
+	padding-top: 5%;
+	height: 562px;
 }
 #right_body_section{
 	width: 80%;
@@ -93,10 +99,8 @@ body{
 }
 #add_expenses_section{
 	width: 83%;
-    padding-top: 5%;
 }
 #add_expenses_section > form{
-	background: aliceblue;
     margin: auto;
     width: 90%;
     padding-top: 5%;
@@ -107,15 +111,47 @@ body{
     position: relative;
 }
 #add_expenses_section > form > div > input{
-	background: white;
-    border-style: none;
+	border-bottom-style: solid;
+	border-top-style:none;
+	border-left-style: none;
+	border-right-style: none;
+	border-color: #660066;
     width: 70%;
     padding-top: 5%;
+    margin-bottom: 3%;
+}
+#add_expenses_section > form > div > input:focus{
+	outline: none;
 }
 #add_expenses_section > form > div > label{
 	position: absolute;
-    left: 20%;
-    top: 25%;
+    left: 15%;
+    top: 35%;
     font-weight: bolder;
-    color: #660066;
+    transition: 2s;
+    color: #26adcf;
+}
+input:focus + label{
+	top: -10px !important;
+	color: #660066 !important;
+}
+#save_expense > button{
+	background: #26adcf;
+    color: white;
+    border-style: none;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width: 40%;
+    border-radius: 25px;
+    transition: 1.4s;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-top: 5%;
+}
+#save_expense > button:focus{
+	outline: none;
+}
+#save_expense > button:hover{
+	background: #660066;
 }

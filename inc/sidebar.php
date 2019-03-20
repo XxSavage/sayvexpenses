@@ -29,6 +29,7 @@
 	</div>
 	<div id="navigation_bar_links">
 		<div>Dashboard</div>
+		<div><a href="../index.php">Homepage</a></div>
 		<div>Add Expenses</div>
 		<div>See all expenses</div>
 		<div>Log Out</div>
