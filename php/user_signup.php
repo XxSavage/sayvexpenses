@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>User Login</title>
-	<link rel="stylesheet" type="text/css" href="../css/user_login.css">
+	<link rel="stylesheet" type="text/css" href="../css/user_signup.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 <body>
@@ -17,10 +17,6 @@
 					<input id="firstname" type="text" name="firstname">
 					<label id="label_for_firstname" for="firstname">First Name:</label>
 				</div>
-				<div id="middlename_div">
-					<input id="middlename" type="text" name="middlename">
-					<label id="label_for_middlename" for="label_for_middlename">Middle Name:</label>
-				</div>	
 				<div id="lastname_div">
 					<input id="lastname" type="text" name="lastname">
 					<label id="label_for_lastname" for="lastname">Last Name:</label>
@@ -28,6 +24,10 @@
 				<div id="username_div">
 					<input id="username" type="text" name="username">
 					<label for="username">Username:</label>
+				</div>	
+				<div id="email_div">
+					<input id="email" type="text" name="email">
+					<label id="label_for_email" for="label_for_email">Email Address:</label>
 				</div>	
 				<div id="password_div">
 					<input id="password" type="text" name="password">
@@ -51,12 +51,12 @@
 			document.getElementById("firstname").style.borderBottomColor = "red";
 		}
 
-		function middlename_error(){
-			document.getElementById("label_for_middlename").innerHTML = "Please Enter Your Middle Name";
-			document.getElementById("label_for_middlename").style.color = "red";
-			document.getElementById("label_for_middlename").style.fontWeight = "bolder";
-			document.getElementById("middlename").style.borderBottomColor = "red";
-		}
+		// function middlename_error(){
+		// 	document.getElementById("label_for_middlename").innerHTML = "Please Enter Your Middle Name";
+		// 	document.getElementById("label_for_middlename").style.color = "red";
+		// 	document.getElementById("label_for_middlename").style.fontWeight = "bolder";
+		// 	document.getElementById("middlename").style.borderBottomColor = "red";
+		// }
 
 		function lastname_error(){
 			document.getElementById("label_for_lastname").innerHTML = "Please Enter Your Last Name";
@@ -73,15 +73,18 @@
 			var password 			= document.getElementById("password").value;
   			var confirm_password 	= document.getElementById("confirm_password").value;
 
-  			if ((firstname.length == 0) && (middlename.length == 0) && (lastname.length == 0)) {
+  			if ((firstname.length == 0) && (lastname.length == 0)) {
 				firstname_error();
-				middlename_error();
 				lastname_error();
 	  			return false;
   			}
   			else{
-  				return true;
-  				// window.top.location='../auth/user_signup_auth.php';
+  				if ($password == $confirm_password) {
+  					return true;
+  				}
+  				else{
+  					return false;
+  				}
   			}
 		}
 	</script>

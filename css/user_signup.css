@@ -28,7 +28,7 @@ body{
 input:focus, button:focus{
 	outline: transparent;
 }
-#firstname_div > input, #middlename_div > input, #lastname_div > input, #username_div > input, #password_div > input, #confirm_password_div > input{
+#firstname_div > input, #email_div > input, #lastname_div > input, #username_div > input, #password_div > input, #confirm_password_div > input{
 	width: 100%;
     padding-top: 5%;
     padding-bottom: 3%;
@@ -39,10 +39,10 @@ input:focus, button:focus{
     border-bottom-color: #660066;
     border-bottom-width: 3px;
 }
-#firstname_div > input:focus, #middlename_div > input:focus, #lastname_div > input:focus, #username_div > input:focus, #password_div > input:focus, #confirm_password_div > input:focus{
+#firstname_div > input:focus, #email_div > input:focus, #lastname_div > input:focus, #username_div > input:focus, #password_div > input:focus, #confirm_password_div > input:focus{
 	border-bottom-color: #26adcf;
 }
-#firstname_div > label, #middlename_div > label, #lastname_div > label, #username_div > label, #password_div > label, #confirm_password_div > label{
+#firstname_div > label, #email_div > label, #lastname_div > label, #username_div > label, #password_div > label, #confirm_password_div > label{
 	top: -40px;
     position: relative;
     color: #660066;

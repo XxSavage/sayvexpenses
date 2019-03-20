@@ -34,7 +34,7 @@
 			<p><small>Want a good way to keep track of your</small></p>
 			<p>EXPENSES</p>
 <!-- 			<p>for later?</p>
- -->			<p id="try_sayvexpenses"><a href="php/user_login.php">Try Sayvexpenses</a></p>
+ -->			<p id="try_sayvexpenses"><a href="php/user_signup.php">Try Sayvexpenses</a></p>
 		</div>
 	</div>
 </body>
