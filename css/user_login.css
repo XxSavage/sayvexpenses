@@ -1,0 +1,75 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	font-family: 'Raleway', sans-serif;
+}
+#background_svg_div{
+	position: relative;
+}
+#background_svg_div > img{
+	position: absolute;
+}
+#header_text{
+	color: #26adcf;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bolder;
+    padding-top: 5%;
+    padding-bottom: 3%
+}
+#main_create_acct_box{
+	position: relative;
+    margin: auto;
+    width: 50%;
+    padding-bottom: 10%;
+}
+input:focus, button:focus{
+	outline: transparent;
+}
+#firstname_div > input, #middlename_div > input, #lastname_div > input, #username_div > input, #password_div > input, #confirm_password_div > input{
+	width: 100%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-right-style: none;
+    border-top-style: none;
+    border-bottom-color: #660066;
+    border-bottom-width: 3px;
+}
+#firstname_div > input:focus, #middlename_div > input:focus, #lastname_div > input:focus, #username_div > input:focus, #password_div > input:focus, #confirm_password_div > input:focus{
+	border-bottom-color: #26adcf;
+}
+#firstname_div > label, #middlename_div > label, #lastname_div > label, #username_div > label, #password_div > label, #confirm_password_div > label{
+	top: -40px;
+    position: relative;
+    color: #660066;
+    transition: 2s;
+}
+input:focus + label{
+	top: -70px !important;
+	color: #26adcf !important;
+}
+#create_account_div{
+	text-align: center;
+	padding-top: 5%;
+}
+#create_account_div > button{
+	background: #26adcf;
+    color: white;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width: 50%;
+    border-style: solid;
+    border-color: #26adcf;
+    border-radius: 155px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    transition: 2s;
+}
+#create_account_div > button:hover{
+	background: #660066;
+	border-color: #660066;
+}

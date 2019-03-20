@@ -1,0 +1,9 @@
+Fonts used in this design:
+
+Font: Cooper Hewitt
+Author: Cooper Hewitt
+Url: http://www.fontsquirrel.com/fonts/cooper-hewitt
+
+Font: Glegoo
+Author: Eduardo Tunni
+Url: https://www.fontsquirrel.com/fonts/glegoo

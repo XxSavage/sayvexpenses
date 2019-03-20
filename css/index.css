@@ -1,0 +1,124 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	font-family: 'Raleway', sans-serif;
+}
+#right_sided_svg_bg_container{
+	overflow: hidden;
+	position: absolute;
+    width: 100%;
+    top: -520px;
+    -webkit-transition: top 5s ease;
+    transition: top 5s ease;
+    z-index: -10;
+}
+#right_sided_svg_bg{
+	height: 750px;
+	float: right;
+}
+#header_links{
+	position: absolute;
+	width: 100%;
+	overflow: hidden;
+}
+#header_links > div{
+	width: 50%;
+}
+#main_header_container{
+	position: relative;
+}
+#logo_div{
+	float: left;
+}
+#logo_div > img{
+	padding-top: 3%;
+    padding-bottom: 3%;
+    width: 50%;
+}
+#goto_div{
+	float: right;
+	padding-top: 3%;
+}
+#goto_div > div{
+	float: left;
+    color: white;
+    width: 20%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: 1.8s ease;
+    text-align: center;
+    padding-bottom: 10px;
+}
+#goto_div > div:nth-child(2){
+	width: 33%;
+}
+#goto_div > div:hover{
+	font-weight: bold;
+	border-bottom-style: solid;
+	border-bottom-color: white;
+	border-bottom-width: 1px;
+
+	/* Start the shake animation and make the animation last for 0.5 seconds */
+/*  	animation: shake 0.4s; 
+*/
+  	/* When the animation is finished, start again */
+/*  	animation-iteration-count: infinite; 
+*/}
+/*@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+*/
+#main_header_text_container{
+    position: relative;
+    padding-top: 17%;
+    padding-left: 60px;
+    width: 28%;
+    left: -570px;
+    -webkit-transition: left 5s ease;
+    transition: left 5s ease;
+}
+#text_in_header_container{
+	text-align: center;
+}
+#text_in_header_container > p:nth-child(1), #text_in_header_container > p:nth-child(3){
+	font-size: 30px;
+	font-weight: bolder;
+}
+#text_in_header_container > p:nth-child(2){
+	color: #660066;
+    font-size: 90px;
+    font-weight: bolder;
+}
+#text_in_header_container > p:nth-child(3){
+	margin-bottom: 9%;
+}
+#try_sayvexpenses{
+	background: #660066;
+	color: white;
+    margin-top: 50px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 80%;
+    margin: auto;
+    border-radius: 25px;
+    transition: 2s;
+}
+#try_sayvexpenses:hover{
+	background: #26adcf;
+}
+#try_sayvexpenses > a{
+	text-decoration: none;
+	color: white;
+}
