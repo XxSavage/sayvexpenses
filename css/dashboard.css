@@ -8,9 +8,9 @@ body{
 }
 #main_sidebar_container{
 	background: black;
-	padding-top: 5%;
-	padding-bottom: 5%;
-	height: 100%;
+	/*padding-top: 5%;
+	padding-bottom: 8.5%;
+	height: 100%;*/
 	width: 20%;
 }
 #logo_container{
@@ -28,7 +28,10 @@ body{
 }
 #navigation_bar_links > div{
 	padding-top: 5%;
-	padding-bottom: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
 }
 #user_icon_container{
 	position: relative;
@@ -37,17 +40,82 @@ body{
 }
 #colored_div{
 	text-align: center;
-	background: white;
+    background: black;
     height: 130px;
     width: 100%;
     border-style: solid;
+    border-width: 4px;
     border-radius: 50%;
-    border-color: #26adcf;
+    border-color: #660066;
 }
 #colored_div > p{
-	color: #660066;
+	color: white;
     font-weight: bolder;
     font-size: 96px;
     position: relative;
     top: 0%;
+}
+#username{
+	color: white;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 9%;
+    font-size: 20px;
+}
+#main_body_section{
+	overflow: hidden;
+}
+#main_body_section > div{
+	float: right;
+}
+#main_sidebar_container{
+	width: 20%;
+}
+#right_body_section{
+	width: 80%;
+    padding-top: 5%;
+}
+#welcome_text{
+	overflow: hidden;
+	background: #660066;
+    color: white;
+    padding-top: 3%;
+    width: 80%;
+    border-top-right-radius: 30px;
+    padding-bottom: 3%;
+    font-weight: bolder;
+    font-size: 20px;
+    border-bottom-right-radius: 30px;
+    padding-left: 4%;
+}
+#welcome_text_p{
+	transition: 3s;
+}
+#add_expenses_section{
+	width: 83%;
+    padding-top: 5%;
+}
+#add_expenses_section > form{
+	background: aliceblue;
+    margin: auto;
+    width: 90%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#add_expenses_section > form > div{
+	text-align: center;
+    position: relative;
+}
+#add_expenses_section > form > div > input{
+	background: white;
+    border-style: none;
+    width: 70%;
+    padding-top: 5%;
+}
+#add_expenses_section > form > div > label{
+	position: absolute;
+    left: 20%;
+    top: 25%;
+    font-weight: bolder;
+    color: #660066;
 }

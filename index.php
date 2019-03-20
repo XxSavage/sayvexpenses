@@ -20,12 +20,12 @@
 		</div>
 		<div id="header_links">
 			<div id="logo_div">
-				<img src="svgs/logo/logo-01-01.png">
+				<img src="svgs/logo/logo-01-01.png"></a>
 			</div>
 			<div id="goto_div">
 				<div>Home</div>
-				<div>Create An Account</div>
-				<div>Log In</div>
+				<div><a href="php/user_signup.php">Create An Account</a></div>
+				<div><a href="php/user_signin.php">Log In</a></div>
 			</div>
 		</div>
 	</div>	

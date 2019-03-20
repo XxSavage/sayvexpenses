@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>User Login</title>
+	<title>User Signup</title>
 	<link rel="stylesheet" type="text/css" href="../css/user_signup.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 <body>
-	<div id="logo_div">
-		<img src="../svgs/logo/logo-01-01.png">
+	<div id="header_container">
+		<div id="logo_div">
+			<a href="../index.php"><img src="../svgs/logo/logo-01-01.png"></a>
+		</div>
+		<div id="header_links">
+			<div><a href="../index.php">Home</a></div>
+			<div><a href="forgot_password.php">Forgot Password</a></div>
+		</div>
 	</div>
 	<section id="login_section">
-		<div id="header_text">Log into your Sayvexpense account</div>
+		<div id="header_text">Create your Sayvexpense account</div>
 		<div id="main_create_acct_box">
 			<form method="POST" action="../auth/user_signup_auth.php" onsubmit="return account_creation_validation()">
-				<div id="firstname_div">
-					<input id="firstname" type="text" name="firstname">
-					<label id="label_for_firstname" for="firstname">First Name:</label>
-				</div>
-				<div id="lastname_div">
-					<input id="lastname" type="text" name="lastname">
-					<label id="label_for_lastname" for="lastname">Last Name:</label>
+				<div id="first_and_lastname_div">
+					<div id="firstname_div">
+						<input id="firstname" type="text" name="firstname">
+						<label id="label_for_firstname" for="firstname">First Name:</label>
+					</div>
+					<div id="lastname_div">
+						<input id="lastname" type="text" name="lastname">
+						<label id="label_for_lastname" for="lastname">Last Name:</label>
+					</div>
 				</div>
 				<div id="username_div">
 					<input id="username" type="text" name="username">
@@ -29,17 +37,22 @@
 					<input id="email" type="text" name="email">
 					<label id="label_for_email" for="label_for_email">Email Address:</label>
 				</div>	
-				<div id="password_div">
-					<input id="password" type="text" name="password">
-					<label for="password">Create Password:</label>
-				</div>		
-				<div id="confirm_password_div">
-					<input id="confirm_password" type="text" name="confirm_password">
-					<label for="confirm_password">Confirm Password:</label>
-				</div>	
+				<div id="password_container">
+					<div id="password_div">
+						<input id="password" type="text" name="password">
+						<label for="password">Create Password:</label>
+					</div>		
+					<div id="confirm_password_div">
+						<input id="confirm_password" type="text" name="confirm_password">
+						<label for="confirm_password">Confirm Password:</label>
+					</div>
+				</div>
 				<div id="create_account_div">
 					<button name="create_account">Create Account</button>
-				</div>		
+				</div>	
+				<div id="account_login">
+					<a href="user_signin.php">Log In</a>
+				</div>	
 			</form>
 		</div>
 	</section>

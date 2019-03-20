@@ -28,10 +28,6 @@ body{
     color: #660066;
     font-weight: bolder;
 }
-#logo_div > a > img{
-    width: 40%;
-    padding-top: 3%;
-}
 #background_svg_div{
 	position: relative;
 }
@@ -52,20 +48,7 @@ body{
     width: 50%;
     padding-bottom: 10%;
 }
-input:focus, button:focus{
-	outline: transparent;
-}
-#first_and_lastname_div > div, #password_container > div{
-    width: 47%;
-    padding-top: 5% !important;
-}
-#firstname_div, #password_div{
-    float: left;
-}
-#lastname_div, #confirm_password_div{
-    float: right;
-}
-#firstname_div > input, #email_div > input, #lastname_div > input, #username_div > input, #password_div > input, #confirm_password_div > input{
+#username_div > input, #password_div > input{
 	width: 100%;
     padding-top: 5%;
     padding-bottom: 3%;
@@ -76,10 +59,11 @@ input:focus, button:focus{
     border-bottom-color: #660066;
     border-bottom-width: 3px;
 }
-#firstname_div > input:focus, #email_div > input:focus, #lastname_div > input:focus, #username_div > input:focus, #password_div > input:focus, #confirm_password_div > input:focus{
+#username_div > input:focus, #password_div > input:focus{
 	border-bottom-color: #26adcf;
+    outline: none;
 }
-#firstname_div > label, #email_div > label, #lastname_div > label, #username_div > label, #password_div > label, #confirm_password_div > label{
+#username_div > label, #password_div > label{
 	top: -40px;
     position: relative;
     color: #660066;
@@ -89,11 +73,11 @@ input:focus + label{
 	top: -70px !important;
 	color: #26adcf !important;
 }
-#create_account_div{
+#account_login_div{
 	text-align: center;
 	padding-top: 5%;
 }
-#create_account_div > button{
+#account_login_div > button{
 	background: #26adcf;
     color: white;
     padding-top: 3%;
@@ -106,22 +90,23 @@ input:focus + label{
     font-size: 18px;
     transition: 2s;
 }
-#create_account_div > button:hover{
+#account_login_div > button:hover{
 	background: #660066;
 	border-color: #660066;
 }
-#first_and_lastname_div, #password_container{
-    overflow: hidden;
-}
-#account_login{
-    text-align: center;
+#logo_div > a > img{
+    width: 40%;
     padding-top: 3%;
-}
-#account_login > a{
-    text-decoration: none;
-    color: #660066;
-    font-weight: bold;
 }
 #logo_div > a > img:focus, #logo_div > a:focus{
     outline: none;
+}
+#forgot_password_div{
+    text-align: center;
+    padding-top: 3%;
+}
+#forgot_password_div > a{
+    text-decoration: none;
+    color: #660066;
+    font-weight: bold;
 }

@@ -52,6 +52,10 @@ body{
     text-align: center;
     padding-bottom: 10px;
 }
+#goto_div > div > a{
+  text-decoration: none;
+  color: white;
+}
 #goto_div > div:nth-child(2){
 	width: 33%;
 }
